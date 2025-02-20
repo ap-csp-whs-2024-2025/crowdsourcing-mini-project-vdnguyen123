@@ -43,6 +43,11 @@ int main()
     
         std::cout << "\nWould you like to enter a new song (y/n)?\n";
         std::cin >> choice;
+
+        if (choice != "y")
+        {
+            std::cout << "\nInvalid option. Please choose again (y/n).\n";
+        }
     }
    
     return 0;
