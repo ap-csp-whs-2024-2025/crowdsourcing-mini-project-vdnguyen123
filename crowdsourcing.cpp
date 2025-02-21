@@ -19,7 +19,7 @@ int main()
     std::vector<int> song_duration = {};
 
     std::string choice = "y"; // y or n to enter a new song
-    while (choice != "n")
+    while (choice != "n" && choice == "y")
     {
         std::cout << "\nEnter a song name (don't add spaces)\n";
         std::string name;
@@ -40,14 +40,9 @@ int main()
         display(song_names);
         display(song_artist);
         display(song_duration);
-    
+
         std::cout << "\nWould you like to enter a new song (y/n)?\n";
         std::cin >> choice;
-
-        if (choice != "y")
-        {
-            std::cout << "\nInvalid option. Please choose again (y/n).\n";
-        }
     }
    
     return 0;
